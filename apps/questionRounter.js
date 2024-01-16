@@ -66,7 +66,7 @@ questionRounter.put("/:id/like", async (req, res) => {
     { $set: { like: updateLike } }
   );
   return res.json({
-    message: "Add like",
+    message: "Add like on question complete",
   });
 });
 
@@ -79,7 +79,7 @@ questionRounter.put("/:id/dislike", async (req, res) => {
     { $set: { like: updateLike } }
   );
   return res.json({
-    message: "Add dislike",
+    message: "Add dislike on question complete",
   });
 });
 
@@ -127,7 +127,7 @@ questionRounter.put("/answer/:answerId/like", async (req, res) => {
     { $set: { like: updateLike } }
   );
   return res.json({
-    message: "Add like",
+    message: "Add like on answer complete",
   });
 });
 
@@ -140,7 +140,7 @@ questionRounter.put("/answer/:answerId/dislike", async (req, res) => {
     { $set: { like: updateLike } }
   );
   return res.json({
-    message: "Add dislike",
+    message: "Add dislike on answer complete",
   });
 });
 export default questionRounter;
